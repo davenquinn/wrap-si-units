@@ -15,7 +15,7 @@ def filter_SI_units(text, si_units=None):
     return text
 
 replacements = [
-    (u"ºC",r"{$^{\circ}$C}"),
+    (u"ºC",r"$^{\circ}$C"),
     ("\~",'~'),
     ("~","\~")
 ]
