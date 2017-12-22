@@ -14,3 +14,7 @@ m
 g
 kg
 kV
+km^3
+km^2
+m^2
+m^3
