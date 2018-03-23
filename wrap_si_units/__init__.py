@@ -11,7 +11,7 @@ def filter_SI_units(text, si_units=None):
 
     for unit in units:
         unit = unit.replace("^","\^")
-        text = sub("((?:(?<=\s)-)?[\d\.]+) ({})".format(unit),r"\SI{\1}{\2}",text)
+        text = sub("((?:(?<=\s)-)?[\d,]+((\.[\d]*)+)?) ({})([\s\-\.,:;])".format(unit),r"\SI{\1}{\4}\5",text)
     return text
 
 replacements = [
